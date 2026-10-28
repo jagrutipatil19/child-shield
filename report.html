@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Concern - ChildShild</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="report.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ ChildShild
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="report.html" class="active">Report</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Report Section -->
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h1>Report a Concern</h1>
+
+            <p>
+                Help protect children by reporting a safety concern.
+            </p>
+
+
+            <!-- Report Form -->
+            <form id="reportForm">
+
+                <!-- Name -->
+                <label for="reportName">Your Name</label>
+
+                <input
+                    type="text"
+                    id="reportName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <!-- Email -->
+                <label for="reportEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="reportEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Concern Type -->
+                <label for="concern">Type of Concern</label>
+
+                <select id="concern" required>
+
+                    <option value="">
+                        Select an option
+                    </option>
+
+                    <option value="child-safety">
+                        Child Safety Concern
+                    </option>
+
+                    <option value="trafficking">
+                        Suspected Child Trafficking
+                    </option>
+
+                    <option value="child-labour">
+                        Child Labour
+                    </option>
+
+                    <option value="missing-child">
+                        Missing Child
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <!-- Description -->
+                <label for="description">Description</label>
+
+                <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Describe your concern..."
+                    required
+                ></textarea>
+
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ChildShild | Protect Every Child
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="web.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./Backend/supabase.js"></script>
+<script src="./Backend/reports.js"></script>
+
+
+</body>
+</html>

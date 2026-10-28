@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - ChildShild</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ ChildShild
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Login Section -->
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h1>Login</h1>
+
+            <p>
+                Login to access your ChildShild account.
+            </p>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <!-- Email -->
+                <label for="loginEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Password -->
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Login
+                </button>
+
+                <!-- Feedback Message -->
+                <p id="authMessage" style="text-align:center; margin-top:15px; font-weight:bold;"></p>
+
+            </form>
+
+
+            <!-- Register Link -->
+            <p class="form-link">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ChildShild | Protect Every Child
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="web.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./Backend/supabase.js"></script>
+<script src="./Backend/auth.js"></script>
+
+</body>
+</html>
